@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniel-bouzaglo-jerusalem-real-estate-0ef9806d.zappy5.app/sitemap.xml

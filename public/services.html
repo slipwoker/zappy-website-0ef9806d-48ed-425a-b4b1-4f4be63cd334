@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>שירותי נדל"ן יוקרתיים בירושלים — DANIEL BOUZAGLO - JERUSALEM REAL ESTATE</title><meta 21="" name="description" content="שירותי נדל\" ן="" מקיפים="" בירושלים:="" דירות="" יוקרה,="" פרויקטים="" חדשים,="" ייעוץ="" השקעות="" ושירותי="" vip.="" מומחיות="" של="" שנה."=""><meta name="keywords" content="jerusalem apartments, apartment for sale in jerusalem, jerusalem real estate, luxury real estate jerusalem, new development in jerusalem"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '0ef9806d-48ed-425a-b4b1-4f4be63cd334',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head><body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div><nav class="navbar" id="navbar"><div class="container nav-container"><div class="nav-brand"><a href="/" class="logo-link"><img src="assets/daniel-bouzaglo-jerusalem-real-estate-logo.webp" alt="DANIEL BOUZAGLO - JERUSALEM REAL ESTATE" class="logo" /></a></div><button class="mobile-toggle" id="mobileToggle" aria-label="פתח תפריט"><svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></button><button class="phone-header-btn" aria-label="התקשר אלינו"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button><ul class="nav-menu" id="navMenu"><li><a href="/services">השירותים שלנו</a></li><li><a href="/about">אודות</a></li></ul><div class="nav-cta-container"><li class="nav-cta-item"><a href="/contact" class="nav-cta-btn">צור קשר</a></li></div></div></nav><main><section class="page-header"><div class="container"><h1>השירותים המקיפים שלנו בנדל"ן ירושלים</h1><h3>פתרונות נדל"ן מותאמים אישית ללקוחות פרימיום - מרכישה ועד השקעה</h3></div></section><section class="services-detailed"><div class="container"><div class="service-detail"><div class="service-detail-content"><h2>jerusalem apartments - דירות יוקרה בשכונות המובחרות</h2><p>אנו מתמחים במציאת jerusalem apartments היוקרתיות ביותר בירושלים, בשכונות כמו רחביה, טלביה, בקעה, גרמן קולוני וממילא. עם ניסיון של למעלה מ-21 שנה בשוק הנדל"ן הירושלמי, אנו מכירים כל פינה בעיר ויודעים בדיוק איפה למצוא את הנכס המושלם עבורך.</p><p>השירות שלנו כולל ליווי מלא החל מהגדרת הצרכים והתקציב, דרך סיורים מותאמים אישית בנכסים, ועד לסיוע בהליכי הרכישה והעברת הבעלות. אנו עובדים עם מגוון רחב של נכסים - מדירות קלאסיות ומרווחות ועד לפנטהאוזים יוקרתיים עם נוף פנורמי לעיר העתיקה.</p><ul class="service-features"><li><i class="fas fa-check"></i> ליווי מקצועי לאורך כל תהליך הרכישה</li><li><i class="fas fa-check"></i> גישה לנכסים בלעדיים שאינם מפורסמים בשוק</li><li><i class="fas fa-check"></i> ניתוח שוק מעמיק והערכת שווי מדויקת</li><li><i class="fas fa-check"></i> סיוע במשא ומתן ובהשגת התנאים הטובים ביותר</li></ul></div><div class="service-detail-image"><img data-placeholder="service-4" data-context="Luxurious living room in Jerusalem apartment with high ceilings, designer furniture and large windows" src="assets/daniel-bouzaglo-jerusalem-real-estate-service-service-4.webp" alt="דירת יוקרה בירושלים"></div></div><div class="service-detail reverse"><div class="service-detail-content"><h2>apartment for sale in jerusalem - מכירת נכסים יוקרתיים</h2><p>אם אתם בעלי apartment for sale in jerusalem ומעוניינים למכור את הנכס במחיר הטוב ביותר ובזמן הקצר ביותר, אנחנו כאן בשבילכם. השירות שלנו כולל הערכת שווי מקצועית, צילום והפקה איכותית של הנכס, שיווק ממוקד ללקוחות פוטנציאליים מתאימים, וליווי מלא עד לחתימה על החוזה.</p><p>אנו מתמחים במכירת נכסי luxury real estate jerusalem, כולל פנטהאוזים, דירות גן, בתים פרטיים ונכסים ייחודיים אחרים. הקשרים הרחבים שלנו עם קונים פוטנציאליים מהארץ ומהתפוצות, יחד עם הניסיון הרב בשוק, מאפשרים לנו להשיג תוצאות מעולות עבור לקוחותינו.</p><ul class="service-features"><li><i class="fas fa-check"></i> הערכת שווי מדויקת על בסיס ניתוח שוק מקיף</li><li><i class="fas fa-check"></i> צילום מקצועי והפקת חומרי שיווק איכותיים</li><li><i class="fas fa-check"></i> חשיפה ללקוחות פוטנציאליים איכותיים</li><li><i class="fas fa-check"></i> ניהול מו"מ מקצועי והשגת המחיר הטוב ביותר</li></ul></div><div class="service-detail-image"><img data-placeholder="service-5" data-context="Elegant Jerusalem penthouse balcony with city views, outdoor furniture and sunset lighting" src="assets/daniel-bouzaglo-jerusalem-real-estate-service-service-5.webp" alt="פנטהאוז יוקרתי למכירה בירושלים"></div></div><div class="service-detail"><div class="service-detail-content"><h2>jerusalem real estate - ייעוץ והשקעות נדל"ן</h2><p>עולם jerusalem real estate מציע הזדמנויות השקעה מצוינות, אך דורש ידע מקצועי והבנה עמוקה של השוק. אנו מספקים שירותי ייעוץ מקיפים למשקיעים מהארץ ומהתפוצות, כולל ניתוח שוק, זיהוי הזדמנויות השקעה, הערכת פוטנציאל תשואה, וליווי בביצוע העסקה.</p><p>בין אם אתם משקיעים מנוסים המחפשים להרחיב את תיק הנכסים שלכם, או משקיעים חדשים המעוניינים להיכנס לשוק הנדל"ן הירושלמי, אנו נספק לכם את הכלים והידע הנדרשים לקבלת החלטות נכונות. אנו מתמחים בזיהוי נכסים עם פוטנציאל גבוה לעליית ערך, ובמציאת הזדמנויות השקעה ייחודיות בשוק luxury real estate jerusalem.</p><ul class="service-features"><li><i class="fas fa-check"></i> ניתוח שוק מקיף ומעקב אחר מגמות</li><li><i class="fas fa-check"></i> זיהוי הזדמנויות השקעה עם פוטנציאל גבוה</li><li><i class="fas fa-check"></i> חישוב תשואה צפויה והערכת סיכונים</li><li><i class="fas fa-check"></i> ליווי מלא בתהליך ההשקעה</li></ul></div><div class="service-detail-image"><img data-placeholder="service-6" data-context="Business meeting with real estate investment charts and Jerusalem property market analysis on screen" src="assets/daniel-bouzaglo-jerusalem-real-estate-service-service-6.webp" alt="ייעוץ השקעות נדל\" ן="" בירושלים"=""></div></div><div class="service-detail reverse"><div class="service-detail-content"><h2>luxury real estate jerusalem - נכסי פרימיום ויוקרה</h2><p>אנו מתמחים בשוק luxury real estate jerusalem, עם דגש על נכסים יוקרתיים בשווי גבוה במיוחד. הלקוחות שלנו מחפשים לא רק דירה או בית, אלא חוויית מגורים ייחודית ברמה הגבוהה ביותר. אנו מציעים גישה לנכסים בלעדיים שאינם מגיעים לשוק הרגיל, כולל פנטהאוזים עם נוף פנורמי, בתים פרטיים בשכונות היוקרה, ונכסים היסטוריים ייחודיים.</p><p>השירות שלנו ללקוחות VIP כולל דיסקרטיות מלאה, סיורים פרטיים בנכסים, ליווי אישי של דניאל בוזגלו עצמו, וטיפול מקצועי בכל הפרטים הקטנים. אנו מבינים שרכישת נכס יוקרתי היא החלטה משמעותית, ולכן אנו מקדישים את כל תשומת הלב והמקצועיות להבטחת חוויה מושלמת.</p><ul class="service-features"><li><i class="fas fa-check"></i> גישה בלעדית לנכסי פרימיום</li><li><i class="fas fa-check"></i> שירות VIP עם דיסקרטיות מלאה</li><li><i class="fas fa-check"></i> ליווי אישי של דניאל בוזגלו</li><li><i class="fas fa-check"></i> טיפול מקצועי בכל שלב בתהליך</li></ul></div><div class="service-detail-image"><img data-placeholder="service-7" data-context="Ultra-luxury Jerusalem villa with pool, landscaped gardens and mountain views" src="assets/daniel-bouzaglo-jerusalem-real-estate-service-service-7.webp" alt="נכס יוקרה פרימיום בירושלים"></div></div><div class="service-detail"><div class="service-detail-content"><h2>new development in jerusalem - פרויקטים חדשים ומתקדמים</h2><p>ירושלים חווה תקופה של פיתוח נדל"ני אינטנסיבי, עם פרויקטים חדשים ומרשימים הצצים בכל רחבי העיר. אנו מתמחים בשיווק new development in jerusalem, כולל פרויקטים יוקרתיים כמו saidoff tower jerusalem ופרויקטים נוספים של מפתחים מובילים. הקשרים הישירים שלנו עם החברות המפתחות מאפשרים ללקוחותינו לקבל גישה מוקדמת לדירות, תנאים מועדפים, ומידע מלא על כל פרויקט.</p><p>רכישת דירה בפרויקט חדש מציעה יתרונות רבים - תכנון מודרני, טכנולוגיות חדישות, אחריות מלאה מהקבלן, ואפשרות להתאמה אישית של הדירה. אנו מלווים את הלקוחות החל משלב בחירת הפרויקט, דרך בחירת הדירה המתאימה ביותר, ועד למעקב אחר התקדמות הבנייה ומסירת המפתחות.</p><ul class="service-features"><li><i class="fas fa-check"></i> גישה מוקדמת לפרויקטים חדשים</li><li><i class="fas fa-check"></i> תנאים מועדפים מהמפתחים</li><li><i class="fas fa-check"></i> ליווי בבחירת דירה ותכנון התאמות</li><li><i class="fas fa-check"></i> מעקב אחר התקדמות הבנייה</li></ul></div><div class="service-detail-image"><img data-placeholder="service-8" data-context="Modern luxury residential development in Jerusalem with contemporary architecture and green spaces" src="assets/daniel-bouzaglo-jerusalem-real-estate-service-service-8.webp" alt="פרויקט יוקרה חדש בירושלים"></div></div></div></section><section class="process-section"><div class="container"><h2>תהליך העבודה שלנו - פשוט ומקצועי</h2><div class="process-steps"><div class="process-step"><div class="step-number">1</div><h3>פגישת היכרות וייעוץ</h3><p>נפגש לשיחה אישית כדי להבין את הצרכים, התקציב והציפיות שלך. נספק לך ייעוץ ראשוני ללא עלות.</p></div><div class="process-step"><div class="step-number">2</div><h3>חיפוש וסינון נכסים</h3><p>נחפש עבורך את הנכסים המתאימים ביותר, כולל נכסים בלעדיים שאינם מפורסמים בשוק הפתוח.</p></div><div class="process-step"><div class="step-number">3</div><h3>סיורים מותאמים אישית</h3><p>נארגן סיורים בנכסים שנבחרו במיוחד עבורך, עם הסברים מקצועיים על כל נכס ואזור.</p></div><div class="process-step"><div class="step-number">4</div><h3>ניתוח ומו"מ</h3><p>נבצע ניתוח מקיף של הנכס שבחרת, נייצג אותך במו"מ ונדאג להשיג את התנאים הטובים ביותר.</p></div><div class="process-step"><div class="step-number">5</div><h3>ליווי עד למסירת המפתחות</h3><p>נלווה אותך בכל השלבים המשפטיים והפיננסיים, עד למסירת המפתחות והכניסה לנכס החדש.</p></div></div></div></section><section class="cta-section"><div class="container"><div class="cta-content"><h2>מעוניינים לשמוע עוד על השירותים שלנו?</h2><p>צרו קשר עוד היום לייעוץ מקצועי ובלתי מחייב. נשמח לענות על כל שאלה ולסייע לכם למצוא את הפתרון המושלם.</p><a href="/contact" class="btn-primary">צור קשר עכשיו</a></div></div></section></main><a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 DANIEL BOUZAGLO - JERUSALEM REAL ESTATE. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '0ef9806d-48ed-425a-b4b1-4f4be63cd334';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
